@@ -1,41 +1,59 @@
-
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
-html,
-body {
-  padding: 0;
-  text-align: center; 
-  background: linear-gradient(to right, #e0eafc, #cfdef3);
-  font-family: "Poppins", sans-serif;
+html,body{
+    margin:0;
+    padding: 0;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(to right, #e0eafc, #cfdef3);
+
+}
+div{
+    margin-top: 2%;
+    font-size: larger;
+    background: linear-gradient(to right, #e0eafc, #cfdef3);
 }
 
-
-
-.table_css {
-  background: linear-gradient(to right, #1fa2ff, #12d8fa, #a6ffcb);
-  /* margin-left: 35%;
-  margin-right: 30%; */
-  font-family: Arial ;
-  font-weight: bolder;
+h4{
+    padding: 30px;
 }
-
-/* global and india*/
-
-thead{
- background-color: floralwhite;
-}
-tbody{
-  background: linear-gradient(to right, #d3cce3, #e9e4f0);
+.tr-1 ,.tr-2{
+    background: linear-gradient(to right, #d3cce3, #e9e4f0);
 }
 h4{
-    margin-top: 4%;
-    text-decoration: underline ;
+    text-decoration: underline;
 }
-
-tr{
-font-size: larger;
+p{
+    font-size: medium ;
+    font-weight: bold; 
 }
+h2{
+    margin-top: 0.2%;
+    font-family: Arial ;
+    background: linear-gradient(to right, #1fa2ff, #12d8fa, #a6ffcb);
+}
+thead{
+    background-color: floralwhite;
+   }
+@media only screen and (max-width: 619px) {
+    body{
+        background: linear-gradient(to right, #e0eafc, #cfdef3);
+      display: inline-block;
+      width: auto;
+    }
+      div{
+          display: inline-block;    
+      }
+      .tr-1 ,.tr-2{
+        background: linear-gradient(to right, #d3cce3, #e9e4f0);
+      }
+      h2{ 
+        display: inline-block;
+      }
+      p{
+         margin-top: 20%;
+          padding-bottom: 40px;
+          margin-bottom: 20%;
+             }
+    }
 
-
-/* @media only screen and (max-width: 600px) {
-
-} */
+ 
