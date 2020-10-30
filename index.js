@@ -1,16 +1,16 @@
 ///// fetching the api globally /////
 
-fetch("https://api.thevirustracker.com/free-api?global=stats")
+fetch("https://api.covid19api.com/summary")
 .then((apidata) => {
 return apidata.json();
 })
 
 .then((data) => {
-const realdata = data.results[0];
-document.getElementById('total_new_cases_today').innerHTML = realdata.total_new_cases_today; 
-document.getElementById('total_case').innerHTML = realdata.total_cases; 
-document.getElementById('total_deaths').innerHTML = realdata.total_deaths; 
-document.getElementById('total_recovered').innerHTML = realdata.total_recovered;
+const realdata = data.Global;
+document.getElementById('total_new_cases_today').innerHTML = realdata.NewConfirmed; 
+document.getElementById('total_case').innerHTML = realdata.TotalConfirmed; 
+document.getElementById('total_deaths').innerHTML = realdata.TotalDeaths; 
+document.getElementById('total_recovered').innerHTML = realdata.TotalRecovered;
 console.log("total recovered",realdata.total_recovered) 
 })
 
@@ -38,4 +38,3 @@ console.log("total recovered",india_data.TotalRecovered)
 setTimeout(function(){
    window.location.reload(1);
 }, 10000);
-
